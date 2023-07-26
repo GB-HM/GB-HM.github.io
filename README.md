@@ -1,2 +1,2 @@
-# demoBootstrap practica git
-Prueba para practicar git pull
+# demoBootstrap demo
+Prueba para publicar parte de lo que sé hacer y practicar
