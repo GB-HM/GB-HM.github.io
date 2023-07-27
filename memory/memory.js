@@ -37,14 +37,14 @@ function generarValores(n = 24){
     }
     winCon = new Array(n);
     winCon.fill(false);
-    console.log(tablero);
-    console.log(winCon);
     return tablero;
 }
 
 function generarTablero(){
+    divGameboard.innerHTML = "";
+    
     if(statusGame != 0){
-        divGameboard.innerHTML = "";
+        //divGameboard.innerHTML = "";
         num1 = {
             val: "NaN",
             _id: "NaN",
@@ -56,7 +56,6 @@ function generarTablero(){
     }
     
     const tablero = generarValores();
-    //console.log(tablero);
 
     for(let i = 0; i < tablero.length; i++){
         let n = document.createElement("div");
@@ -88,8 +87,8 @@ function compararNumeros(){
     } else {
         div1.status = 0;
         div2.status = 0;
-        div1.innerText = "? " + num1.val;
-        div2.innerText = "? " + num2.val;
+        div1.innerText = "? ";
+        div2.innerText = "? ";
     }
 
     num1 = {
