@@ -14,6 +14,10 @@
     justify-content: center;
 
     font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    font-weight: bold 700;
+    height: 2rem;
+    width: 2.5rem;
 
     border-radius: 5%;
     background-color: aliceblue;
@@ -48,9 +52,11 @@
     align-content: flex-start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 460px) {
     .memoryCard{
-        height: 3rem;
-        width: 2rem;
+        min-height: 80px;
+        min-width: 72px;
+        height: 0rem;
     }
 }
+

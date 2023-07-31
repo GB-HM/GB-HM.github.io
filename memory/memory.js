@@ -17,6 +17,8 @@ var num2 = {
 btnStart.addEventListener('click', generarTablero);
 
 function generarValores(n = 24){
+    const dif = document.getElementById('dificultad');
+    n = parseInt(dif.value);
     if ((n % 2)!= 0 ) n++;
     let tablero = new Array(n);
     let nOptions = n/2;
